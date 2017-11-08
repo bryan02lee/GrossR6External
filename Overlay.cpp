@@ -62,6 +62,9 @@ void Overlay::Render() {
 }
 
 void Overlay::ESP() {
+	//Update addresses
+	Global::Memory.UpdateAddresses();
+
 	//Set our colors for later
 	DWORD boxColor = D3DCOLOR_ARGB(255, 255, 255, 255); //white
 	DWORD headCircleColor = D3DCOLOR_ARGB(255, 62, 229, 65); //green
