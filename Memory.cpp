@@ -291,5 +291,5 @@ Vector3 Mem::WorldToScreen(Vector3 position) {
 	float y = temp.Dot(GetViewUp());
 	float z = temp.Dot(GetViewForward() * -1);
 
-	return Vector3((displayWidth / 2) * (1 + x / GetFOVX() / z), (displayWidth / 2) * (1 - y / GetFOVY() / z), z);
+	return Vector3((displayWidth / 2) * (1 + x / GetFOVX() / z), (displayHeight / 2) * (1 - y / GetFOVY() / z), z);
 }
